@@ -22,7 +22,6 @@ class List extends React.Component {
                         </li>
                     );
                 })}
-                {list == [] && <li>No Items Yet</li>}
             </ul>
         );
     }

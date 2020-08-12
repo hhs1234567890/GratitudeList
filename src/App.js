@@ -61,8 +61,6 @@ class App extends React.Component {
         if (this.state.value !== '') this.setState({ buttDis: true });
     }
     render() {
-        console.log(this.state.list);
-        console.log(this.state.list.length == 0);
         return (
             <div className="App">
                 <div className="container">
@@ -81,7 +79,7 @@ class App extends React.Component {
                         focusOut={this.focusOut}
                     />
                     <List delete={this.delete} list={this.state.list} />
-                    {this.state.list.length == 0 && <p>No Items Yet</p>}
+                    {this.state.list.length === 0 && <p>No Items Yet</p>}
                 </div>
             </div>
         );
