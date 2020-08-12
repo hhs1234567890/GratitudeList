@@ -1,38 +1,118 @@
-.App {
-  text-align: center;
+body {
+    margin: 0;
+    font-family: Roboto;
+}
+.container {
+    margin: 100px auto;
+    width: 360px;
+    background: #f7f7f7;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+}
+.completed {
+    color: grey;
+    text-decoration: line-through;
+}
+h1 {
+    background-color: #2980b9;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    font-weight: 400;
+    margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input {
+    border: none;
+    height: 60px;
+    width: 100%;
+    padding: 5px;
+    background-color: inherit;
+    font-size: 18px;
+    color: #2980b9;
+    box-sizing: border-box;
+    margin: 0;
+}
+.fa-backspace {
+    float: right;
+    vertical-align: middle;
+}
+.fa-backspace:hover {
+    color: #bdc3c7;
+}
+li span {
+    background: #e74c3c;
+    height: 40px;
+    margin-right: 20px;
+    text-align: center;
+    color: white;
+    width: 0px;
+    display: inline-block;
+    transition: 0.2s linear;
+    opacity: 0;
+}
+.toggle {
+    display: none;
+}
+li:hover span {
+    width: 40px;
+    opacity: 1;
+}
+body {
+    background: #003973;
+    background: -webkit-linear-gradient(to right, #e5e5be, #003973);
+    background: linear-gradient(to right, #e5e5be, #003973);
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+form {
+    display: flex;
+    flex-direction: row;
+
+    border: 3px solid #2980b9;
+
+    padding: 2px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input {
+    flex-grow: 2;
+    border: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+input:focus {
+    outline: none;
 }
 
-.App-link {
-  color: #61dafb;
+.button {
+    border: none;
+    background: none;
+    color: #2980b9;
+    outline: none;
+    font-size: 1.15em;
+    padding: 0;
+    width: 50px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button:hover {
+    color: #1e5072;
+}
+form:hover {
+    border: 3px solid #1e5072;
+}
+li {
+    background: white;
+    line-height: 40px;
+}
+li:nth-child(2) {
+    background: #f7f7f7;
+}
+.displayFalse {
+    display: none;
+}
+.button:disabled {
+    color: grey;
+}
+p {
+    padding: 10px;
+    padding-left: 15px;
 }
